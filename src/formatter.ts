@@ -1,4 +1,4 @@
-const hasFullYear = (value: string) => /^19|20/.test(value); // @todo update this regex in year 2100
+const hasFullYear = (value: string) => /^19|^20/.test(value); // @todo update this regex in year 2100
 const insertHyphen = (value: string) => value.substring(0, 8) + '-' + value.substring(8);
 
 const prependCentury = (value: string) => {

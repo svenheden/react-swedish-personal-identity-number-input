@@ -19,8 +19,8 @@
         "react": ">=16.0.0"
     },
     "scripts": {
-        "build": "tsc --project ./ --declaration --outDir dist",
         "test": "npm run build",
+        "build": "tsc",
         "prepare": "npm run build"
     }
 }

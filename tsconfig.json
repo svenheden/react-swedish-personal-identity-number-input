@@ -7,11 +7,10 @@
         "jsx": "react",
         "moduleResolution": "node",
         "rootDir": "src",
-        "forceConsistentCasingInFileNames": true,
-        "noImplicitThis": true,
+        "declaration": true,
+        "outDir": "dist",
         "noImplicitAny": true,
         "strictNullChecks": true,
-        "suppressImplicitAnyIndexErrors": true,
         "noUnusedLocals": true
     },
     "exclude": [

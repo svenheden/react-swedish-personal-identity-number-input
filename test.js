@@ -64,3 +64,8 @@ test('personal identity numbers from the 21st century (for people under 100 year
     assert.equal(formatSwedishPersonalIdentityNumber('20100101-1111'), '20100101-1111');
     assert.end();
 });
+
+test('should never contain more than 13 characters', assert => {
+    assert.equal(formatSwedishPersonalIdentityNumber('21000101-1111'), '19210001-0111');
+    assert.end();
+});

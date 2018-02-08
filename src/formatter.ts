@@ -16,5 +16,7 @@ export const formatSwedishPersonalIdentityNumber = (value: string) => {
     if (!hasFullYear(value)) value = prependCentury(value);
     if (value.length < 8) return value;
 
-    return insertHyphen(value);
+    value = insertHyphen(value);
+
+    return value.substring(0, 13);
 }

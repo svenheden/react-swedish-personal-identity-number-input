@@ -34,6 +34,14 @@ export const createInputFormatter = (options: Options) => (InputComponent: any):
             }
         }
 
+        shouldComponentUpdate(nextProps: any) {
+            if ('value' in nextProps) {
+                return nextProps.value !== this.props.value;
+            }
+
+            return true;
+        }
+
         componentDidUpdate() {
             if (this.inputElement) {
                 this.inputElement.setSelectionRange(this.caretPosition, this.caretPosition);

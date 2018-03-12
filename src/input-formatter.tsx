@@ -43,9 +43,11 @@ export const createInputFormatter = (options: Options) => (InputComponent: any):
         }
 
         componentDidUpdate() {
-            if (this.inputElement) {
-                this.inputElement.setSelectionRange(this.caretPosition, this.caretPosition);
-            }
+            setTimeout(() => {
+                if (this.inputElement) {
+                    this.inputElement.setSelectionRange(this.caretPosition, this.caretPosition);
+                }
+            });
         }
 
         render() {

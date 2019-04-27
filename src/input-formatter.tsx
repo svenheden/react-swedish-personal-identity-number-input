@@ -21,15 +21,16 @@ export const createInputFormatter = (options: Options) => (InputComponent: any):
         private handleChange = (event: any) => {
             const { value } = event.currentTarget;
             const isDeleting = /delete\w+$/.test(event.nativeEvent.inputType);
+            const selectionEnd = this.inputElement.selectionEnd || 0;
 
             if (isDeleting) {
-                this.caretPosition = this.inputElement.selectionEnd;
+                this.caretPosition = selectionEnd;
                 this.props.onChange(value);
             } else {
                 const formatted = options.formatter(value);
                 const delta = formatted.length - value.length;
     
-                this.caretPosition = Math.max(this.inputElement.selectionEnd + delta, 0);
+                this.caretPosition = Math.max(selectionEnd + delta, 0);
                 this.props.onChange(formatted);
             }
         }

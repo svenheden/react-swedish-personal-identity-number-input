@@ -20,34 +20,17 @@ $ npm install --save react-swedish-personal-identity-number-input
 import React from 'react';
 import { createSwedishPersonalIdentityNumberInput } from 'react-swedish-personal-identity-number-input';
 
-class YourInputComponent extends React.Component {
-  render() {
-    const { innerRef, ...rest } = this.props;
-
-    return <input ref={innerRef} {...rest} />
-  }
+const YourInputComponent = ({ innerRef, ...rest }) => {
+  return <input ref={innerRef} {...rest} />;
 }
 
 const SwedishPersonalIdentityNumberInput = createSwedishPersonalIdentityNumberInput(YourInputComponent);
 
-class Demo extends React.Component {
-  state = {};
+const Demo = () => {
+  const [value, setValue] = React.useState();
 
-  handleChange = (value) => {
-    this.setState({ value });
-  }
-
-  render() {
-    return (
-      <SwedishPersonalIdentityNumberInput
-        value={this.state.value}
-        onChange={this.handleChange}
-      />
-    );
-  }
+  return <SwedishPersonalIdentityNumberInput value={value} onChange={setValue} />;
 }
-
-export default Demo;
 ```
 
 

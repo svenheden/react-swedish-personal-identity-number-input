@@ -36,9 +36,9 @@ const Demo = () => {
 
 ## License
 
-MIT © [Jonathan Persson](https://github.com/jonathanp)
+MIT © [Jonathan Svenheden](https://github.com/svenheden)
 
 [npm-url]: https://npmjs.org/package/react-swedish-personal-identity-number-input
 [npm-image]: https://badge.fury.io/js/react-swedish-personal-identity-number-input.svg
-[travis-image]: https://travis-ci.org/jonathanp/react-swedish-personal-identity-number-input.svg
-[travis-url]: https://travis-ci.org/jonathanp/react-swedish-personal-identity-number-input
+[travis-image]: https://travis-ci.org/svenheden/react-swedish-personal-identity-number-input.svg
+[travis-url]: https://travis-ci.org/svenheden/react-swedish-personal-identity-number-input

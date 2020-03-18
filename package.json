@@ -1,27 +1,27 @@
 {
-    "name": "react-swedish-personal-identity-number-input",
-    "version": "0.4.3",
-    "title": "React Swedish personal identity number input",
-    "author": "Jonathan Svenheden <jonathan@svenheden.com>",
-    "license": "MIT",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/svenheden/react-swedish-personal-identity-number-input.git"
-    },
-    "devDependencies": {
-        "@types/react": "^16.8.14",
-        "react": "^16.8.6",
-        "tape": "4.10.1",
-        "typescript": "3.4.5"
-    },
-    "peerDependencies": {
-        "react": ">=16.0.0"
-    },
-    "scripts": {
-        "build": "tsc",
-        "test": "npm run build && node test.js",
-        "prepare": "npm run build"
-    }
+  "name": "react-swedish-personal-identity-number-input",
+  "version": "0.4.3",
+  "title": "React Swedish personal identity number input",
+  "author": "Jonathan Svenheden <jonathan@svenheden.com>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svenheden/react-swedish-personal-identity-number-input.git"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "react": "^16.8.6",
+    "tape": "4.13.2",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node test.js",
+    "prepare": "npm run build"
+  }
 }
